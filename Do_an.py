@@ -32,3 +32,88 @@ for index, row in filtered_df.iterrows():
 
 root.Tk()
 root.title('Ứng dụng tìm laptop')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def show_chart(option):
+    if option == 'Average Price by Company':
+        avg_price = data.groupby('Company')['Price_euros'].mean()
+        avg_price.plot(kind='bar', title='Average Price by Company', ylabel='Price (Euros)', xlabel='Company', color='blue', grid=True)
+        plt.xticks(rotation=45)
+        plt.show()
